@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.nav-bg-color {
+  padding-left: 35px;
+  padding-right: 35px;
+    background: #00b2bc !important;
+}
+
+.main-heading {
+    margin-bottom: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.sidebar {
+    width: 300px;
+}
+
+.body-container {
+    width: 100%;
+    padding: 30px 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        flex-direction: column;
+    }
+    .sidebar {
+        width: 100%;
+    }
+    .body-container {
+        padding: 20px 5px;
+    }
+}
+.sidenav-container {
+    height: 100%;
+    background: #00b2bc;
+}
+
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    padding: 20px 0;
+}
+
+.sidenav a {
+    color: #ffffff !important;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 1.2rem;
+}
+
+.sidenav .side-link div {
+    width: 130px;
+    height: 4px;
+    margin-top: 8px;
+    background: #962c54;
+    transform: translateX(40px);
+    opacity: 0;
+    transition: 0.25s ease-in-out;
+}
+
+.sidenav .side-link:hover div {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+    .sidenav {
+        flex-direction: row;
+        height: auto;
+    }
+    .sidenav a {
+        font-size: 1rem;
+        font-weight: 1rem;
+    }
+    .sidenav-container {
+        height: auto;
+    }
+}
+
+.body-container {
+  color: #000 !important;
+}
+
+.form__field {
+    display: flex;
+  }
+
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+
+  .container {
+    padding: 20px;
+    width:auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  }
+
+  input[type=text], input[type=password], input[type=date], input[type=number] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f7f7f7;
+      font-family: Montserrat,Arial, Helvetica, sans-serif;
+  }
+
+  
+  
+  /* Set a style for all buttons */
+  button {
+    background-color: #0eb7f4;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+      font-size:16px;
+      font-family: Montserrat,Arial, Helvetica, sans-serif;
+      border-radius:10px;
+  }
+  
+  button:hover {
+    opacity:1;
+  }
+  
+  
+  /* Change styles for signup button on extra small screens */
+  @media screen and (max-width: 300px) {
+    .signupbtn {
+       width: 100%;
+    }
+  }

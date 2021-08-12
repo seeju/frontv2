@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Admin</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<div class="wrapper">
+    <!--SideBar-->
+    <div class="sidebar">
+        <div class="sidenav-container">
+
+            <div class="sidenav">
+
+                <div class="side-link">
+                    <a href="#">Início</a>
+                    <div></div>
+                </div>
+
+                <div class="side-link">
+                    <a href="#">Adicionar Usuário</a>
+                    <div></div>
+                </div>
+
+                <div class="side-link">
+                    <a href="#">Editar Usuário</a>
+                    <div></div>
+                </div>
+
+                <div class="side-link">
+                    <a href="#">Listar Usuários</a>
+                    <div></div>
+                </div>
+
+                <div class="side-link">
+                    <a href="#">Apagar Usuário</a>
+                    <div></div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Body Start-->
+    <div class="body-container">
+
+        <form>
+            <div class="container">
+                <h1>Novo Usuário</h1>
+                <input type="text" name="username" placeholder="Nome do usuário">
+                <input type="password" placeholder="Senha provisória" name="password">
+                <input type="checkbox" name="admin">
+                <label class="form-check-label" for="admin">
+                    Administrador
+                  </label>
+                  <br><br>
+                <button type="submit" class="btn">Registrar</button>
+
+            </div>
+        </form>
